@@ -14,16 +14,32 @@ df.label.value_counts().to_frame().style.bar()
 ```
 ### Sorting the column
 ```py
-## accending
+# accending
 df.sort_values(by=['Brand'], inplace=True)
-## descending 
+# descending 
 df.sort_values(by=['Brand'], inplace=True, ascending=False)
 
 ```
 
-### Adding column with default value
+### Adding column
 ```py
+# with default value
 df["new_column"] = None
+# with data
+df['capital city'] = ['Rome','Madrid','Athens','Paris','Lisbon']
+
 ```
+### Rename column
+```py
+dfnew = df.rename(columns={'old_name': 'new_name'})
+```
+### Removing column
+```py
+# Delete using del 
+del df['column_to_remove']
+# Delete using drop() 
+df = df.drop(['column_to_remove'], axis=1)
+```
+
 
 ### Updating row

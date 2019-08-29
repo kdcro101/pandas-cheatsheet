@@ -59,7 +59,7 @@ df.loc[df['val'] > 55.00].head(1)
 # get top n rows - returns array of rows
 df.loc[df['val'] > 55.00].head(5)
 ```
-### TorchText.Dataset from Pandas DataFrame
+### torchtext.data.Dataset from Pandas DataFrame
 ```py
 
 TEXT = data.Field(tokenize='spacy')

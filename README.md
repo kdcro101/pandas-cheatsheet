@@ -80,4 +80,6 @@ def create_dataset(dataframe,text_column,label_column, TEXT_FIELD, LABEL_FIELD):
 # use as
 train_examples, train_fields = create_dataset(dataFrame,"title","change_prc", TEXT, LABEL)
 
+train = data.Dataset(train_examples, FIELDS)
+
 ```

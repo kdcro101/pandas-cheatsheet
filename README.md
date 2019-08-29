@@ -46,3 +46,16 @@ df = df.drop(['column_to_remove'], axis=1)
 # Update column 'name' at index 0
 df.loc[0,'name'] = 123
 ```
+
+### Querying DataFrame
+```py
+# get all where 'val' > 55.00
+df.loc[df['val'] > 55.00]
+# get nth where 'val' > 55.00 - returns row only not array of length=1
+df.loc[df['val'] > 55.00].iloc[0]
+
+# get top 1 row - returns array of rows of length=1
+df.loc[df['val'] > 55.00].head(1)
+# get top n rows - returns array of rows
+df.loc[df['val'] > 55.00].head(5)
+```

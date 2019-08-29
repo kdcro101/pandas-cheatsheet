@@ -41,5 +41,8 @@ del df['column_to_remove']
 df = df.drop(['column_to_remove'], axis=1)
 ```
 
-
 ### Updating row
+```py
+# Update column 'name' at index 0
+df[0,'name'] = 123
+```

@@ -58,6 +58,16 @@ df.loc[df['val'] > 55.00].iloc[0]
 df.loc[df['val'] > 55.00].head(1)
 # get top n rows - returns array of rows
 df.loc[df['val'] > 55.00].head(5)
+
+# comparison operators
+df.loc[df['val'] > 55.00].head(5)
+df.loc[df['val'] == 55.00].head(5)
+df.loc[df['val'] != 55.00].head(5)
+df.loc[df['val'].isin(['a','b','c'])]
+
+# logical - combine
+df.loc[(df['val'] >= 0) & (df['column_name'] <= 101)]
+
 ```
 ### torchtext.data.Dataset from Pandas DataFrame
 ```py

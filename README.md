@@ -2,7 +2,7 @@
 https://pandas.pydata.org/
 
 
-### Histogram for sting occurenece in column
+### Histogram for string value count in column
 ```py
 DF.label.value_counts().to_frame().style.bar()
 ```

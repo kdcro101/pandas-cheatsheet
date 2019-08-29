@@ -65,6 +65,12 @@ df.loc[df['val'] == 55.00].head(5)
 df.loc[df['val'] != 55.00].head(5)
 df.loc[df['val'].isin(['a','b','c'])]
 
+#check for None 
+df.loc[df['change2'].isnull()].head(1)
+#check for NOT None 
+df.loc[~df['change2'].isnull()].head(1)
+
+
 # logical - combine
 df.loc[(df['val'] >= 0) & (df['column_name'] <= 101)]
 

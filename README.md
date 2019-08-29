@@ -23,7 +23,7 @@ df.sort_values(by=['Brand'], inplace=True, ascending=False)
 
 ### Adding column with default value
 ```py
-CRUDE_DATA["new_column"] = None
+df["new_column"] = None
 ```
 
 ### Updating row

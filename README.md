@@ -59,3 +59,25 @@ df.loc[df['val'] > 55.00].head(1)
 # get top n rows - returns array of rows
 df.loc[df['val'] > 55.00].head(5)
 ```
+### TorchText.Dataset from Pandas DataFrame
+```py
+
+TEXT = data.Field(tokenize='spacy')
+# example with lambda across LABEL values
+LABEL = data.LabelField(preprocessing=data.Pipeline(lambda x: pro_proc(x)))
+FIELDS = {'title': ('text', TEXT), 'change_prc': ('label', LABEL)}
+
+def create_dataset(dataframe,text_column,label_column, TEXT_FIELD, LABEL_FIELD):
+    # idData pair training is useless during training, use None to specify its corresponding field
+    fields = [(text_column, TEXT_FIELD), (label_column, LABEL_FIELD)]       
+    examples = []
+ 
+    for text, label in tqdm(zip(dataframe[text_column], dataframe[label_column])):
+        examples.append(data.Example.fromlist([text, label], fields))
+ 
+    return examples, fields
+
+# use as
+train_examples, train_fields = create_dataset(dataFrame,"title","change_prc", TEXT, LABEL)
+
+```

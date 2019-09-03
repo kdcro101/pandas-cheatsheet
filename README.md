@@ -2,6 +2,11 @@
 https://pandas.pydata.org/
 
 
+### Check value in index
+```py
+10090723 not in self.CRUDE_DATA.index.values
+```
+
 ### Iterate through DataFrame rows
 ```py
 for index, row in df.iterrows():

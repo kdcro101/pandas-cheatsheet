@@ -13,10 +13,16 @@ for index, row in df.iterrows():
      print(index, row)
 ```
 
-### Histogram for string value count in column
+### Histograms
 ```py
+#string value
 df.label.value_counts().to_frame().style.bar()
+# numerical
+df["column"].hist(figsize=(16,9),bins=50)
+
 ```
+
+
 ### Sorting the column
 ```py
 # accending

@@ -2,7 +2,7 @@
 https://pandas.pydata.org/
 
 
-# modify limit when printing series
+### modify limit when printing series
 ```py
 # set new limit
 pd.set_option('display.max_rows', 1_000_000)

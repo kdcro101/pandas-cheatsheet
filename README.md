@@ -2,6 +2,11 @@
 https://pandas.pydata.org/
 
 
+### Add column with Moving Average
+```py
+df["ma"] = df.rolling(window=10)['column'].mean()
+```
+
 ### Modify limit when printing series
 ```py
 # set new limit

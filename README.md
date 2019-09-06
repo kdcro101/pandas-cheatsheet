@@ -30,6 +30,12 @@ df["column"].hist(figsize=(16,9),bins=50)
 
 ```
 
+### Ploting
+```py
+df.plot(x="date",y="Change")
+```
+
+
 
 ### Sorting the column
 ```py

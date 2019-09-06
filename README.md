@@ -2,6 +2,14 @@
 https://pandas.pydata.org/
 
 
+# modify limit when printing series
+```py
+# set new limit
+pd.set_option('display.max_rows', 1_000_000)
+# reset limit
+pd.reset_option('display.max_rows')
+```
+
 ### Check value in index
 ```py
 10090723 not in self.df.index.values

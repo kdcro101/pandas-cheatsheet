@@ -5,6 +5,8 @@ https://pandas.pydata.org/
 ### Add column with Moving Average
 ```py
 df["ma"] = df.rolling(window=10)['column'].mean()
+# then plot it
+df.plot(x="date",y="ma",figsize=(16,9),linewidth=0.5)
 ```
 
 ### Modify limit when printing series

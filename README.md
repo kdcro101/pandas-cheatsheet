@@ -2,7 +2,7 @@
 https://pandas.pydata.org/
 
 
-### modify limit when printing series
+### Modify limit when printing series
 ```py
 # set new limit
 pd.set_option('display.max_rows', 1_000_000)
@@ -34,8 +34,6 @@ df["column"].hist(figsize=(16,9),bins=50)
 ```py
 df.plot(x="date",y="Change")
 ```
-
-
 
 ### Sorting the column
 ```py

@@ -3,7 +3,7 @@ https://pandas.pydata.org/
 
 ### Get columns in DataFrame
 ```py
-list = df..columns
+list = df.columns
 ```
 ### Add column with Moving Average
 ```py

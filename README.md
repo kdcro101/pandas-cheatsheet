@@ -1,7 +1,10 @@
 # Pandas cheatsheet
 https://pandas.pydata.org/
 
-
+### Get columns in DataFrame
+```py
+list = df..columns
+```
 ### Add column with Moving Average
 ```py
 df["ma"] = df.rolling(window=10)['column'].mean()

@@ -1,6 +1,21 @@
 # Pandas cheatsheet
 https://pandas.pydata.org/
 
+
+### Plot multiple series with ma
+```py
+        df = pd.read_csv(csv_filepath)
+               
+        df.plot(x='epoch', y=[
+            "series1",
+            "series2",
+            "series3",
+            "series4",
+            "series5" ], figsize=(32, 18), grid=True)
+
+        plt.savefig(os.path.join(self.ROOT, 'report.pdf'))
+        plt.savefig(os.path.join(self.ROOT, 'report.png'))
+```
 ### Get columns in DataFrame
 ```py
 list = df.columns

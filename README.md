@@ -8,12 +8,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv(csv_filepath)
 
-df.plot(x='epoch', y=[
-    "series1",
-    "series2",
-    "series3",
-    "series4",
-    "series5" ], figsize=(32, 18), grid=True)
+df.plot(x='epoch', y=["series1", "series2"], figsize=(32, 18), grid=True, color=["red","green"])
 
 plt.savefig(os.path.join(self.ROOT, 'report.pdf'))
 plt.savefig(os.path.join(self.ROOT, 'report.png'))

@@ -2,6 +2,9 @@
 https://pandas.pydata.org/
 
 
+### Good plotting  guide
+https://kanoki.org/2019/09/16/dataframe-visualization-with-pandas-plot/
+
 ### Plot multiple series with ma
 ```py
 import matplotlib.pyplot as plt

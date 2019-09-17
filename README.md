@@ -12,9 +12,10 @@ https://www.dataquest.io/blog/making-538-plots/
 
 ### Configure Plotting
 ```py
-#increase font size
+# increase font size
 matplotlib.rcParams.update({'font.size': 22})
-
+# make bounding box tight
+plt.savefig('report.png', bbox_inches='tight')
 ```
 
 

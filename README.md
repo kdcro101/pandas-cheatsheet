@@ -16,6 +16,8 @@ https://www.dataquest.io/blog/making-538-plots/
 matplotlib.rcParams.update({'font.size': 22})
 # make bounding box tight
 plt.savefig('report.png', bbox_inches='tight')
+# rotate  axis
+df_m.plot(x='split', y=["total", "POSITIVE", "NEGATIVE"], figsize=(32, 18), grid=True, kind="bar", rot=0)
 ```
 
 

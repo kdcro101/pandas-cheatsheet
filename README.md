@@ -4,6 +4,7 @@ https://pandas.pydata.org/
 
 ### Good plotting  guide
 https://kanoki.org/2019/09/16/dataframe-visualization-with-pandas-plot/
+http://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot
 
 ### Plot multiple series with ma
 ```py

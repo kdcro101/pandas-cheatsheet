@@ -6,6 +6,12 @@ https://pandas.pydata.org/
 https://kanoki.org/2019/09/16/dataframe-visualization-with-pandas-plot/
 http://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot
 
+
+### Create DataFrame
+```py
+df = df.DataFrame([], columns=["name", "P_accuracy", "N_accuracy"])
+```
+
 ### Plot multiple series with ma
 ```py
 import matplotlib.pyplot as plt

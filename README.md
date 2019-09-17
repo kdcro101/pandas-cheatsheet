@@ -21,6 +21,16 @@ df_m.plot(x='split', y=["total", "POSITIVE", "NEGATIVE"], figsize=(32, 18), grid
 ```
 
 
+### groupBy
+```py
+# Within each team we are grouping based on "Position" 
+gkk = daf.groupby(['Team', 'Position']) 
+  
+# Print the first value in each group 
+gkk.first() 
+```
+
+
 ### Create DataFrame
 ```py
 df = df.DataFrame([], columns=["name", "P_accuracy", "N_accuracy"])

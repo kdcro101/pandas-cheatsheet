@@ -7,6 +7,13 @@ https://kanoki.org/2019/09/16/dataframe-visualization-with-pandas-plot/
 
 http://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot
 
+### Configure Plotting
+```py
+#increase font size
+matplotlib.rcParams.update({'font.size': 22})
+
+```
+
 
 ### Create DataFrame
 ```py

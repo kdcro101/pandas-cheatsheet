@@ -7,6 +7,9 @@ https://kanoki.org/2019/09/16/dataframe-visualization-with-pandas-plot/
 
 http://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot
 
+https://www.dataquest.io/blog/making-538-plots/
+
+
 ### Configure Plotting
 ```py
 #increase font size

@@ -10,6 +10,11 @@ http://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplo
 https://www.dataquest.io/blog/making-538-plots/
 
 
+### Generate Date list 
+```py
+pd.date_range(DATE_START, periods=DATE_DELTA.days, freq="D").tolist()
+```
+
 ### Configure Plotting
 ```py
 # increase font size
